@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/base.css" />
+		<link rel="stylesheet" href="./styles/header-section.css" />
+		<title>Header Section</title>
+	</head>
+	<body>
+		<header class="header__wrapper">
+			<div class="container nav__container">
+				<div class="nav__logo">
+					<a href="#">
+						<img src="./img/logo.svg" alt="Logo site" />
+					</a>
+				</div>
+
+				<input type="checkbox" id="nav__menu__input" hidden />
+				<label for="nav__menu__input" class="nav__burger">
+					<span class="burger__icon"></span>
+				</label>
+
+				<nav class="nav__items">
+					<div class="nav__links">
+						<a href="#" class="nav__item">Features</a>
+						<a href="#" class="nav__item">Pricing</a>
+						<a href="#" class="nav__item">Resources</a>
+					</div>
+					<hr class="nav__divider" />
+					<div class="nav__aside">
+						<a href="#" class="nav__item">Login</a>
+						<button class="nav__btn nav__item">Sign Up</button>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<script type="module" src="./js/main.js" async defer></script>
+	</body>
+</html>

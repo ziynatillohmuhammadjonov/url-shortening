@@ -2,9 +2,13 @@
 	--color-primary: #2bd0d0;
 	--color-secondary: #34313d;
 
+	--color-primary-hover: #9ae3e3;
+
 	--color-purple: #3a3054;
 	--color-purple-light: #4b3f6b;
 
 	--color-gray: #9e9aa8;
 	--color-light: #eff1f7;
+
+	--white: #ffffff;
 }
