@@ -1,4 +1,4 @@
-﻿# 🚀 URL Shorting App — Bo'limlarni (Section) Dasturlash Yo'riqnomasi
+﻿# 🚀 URL shortening App — Bo'limlarni (Section) Dasturlash Yo'riqnomasi
 
 Ushbu qo'llanma **Velocity** qo'shma loyihasida o'zingizga biriktirilgan bo'limni (section) sifatli kodga ko'chirish va topshirish bosqichlarini o'z ichiga oladi.
 
