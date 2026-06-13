@@ -1,0 +1,171 @@
+@import url('virables.css');
+
+.header__wrapper {
+	width: 100%;
+	padding: 40px 0;
+	user-select: none;
+	margin-bottom: 80px;
+}
+
+.nav__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+}
+
+.nav__logo {
+	display: flex;
+	align-items: center;
+}
+
+.nav__logo img {
+	display: block;
+}
+
+.nav__items {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-left: 45px;
+}
+
+.nav__links,
+.nav__aside {
+	display: flex;
+	align-items: center;
+}
+
+.nav__item {
+	padding: 10px 18px;
+	font-size: 15px;
+	font-weight: 700;
+	color: var(--color-gray);
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.nav__item:hover {
+	color: var(--color-secondary);
+}
+
+.nav__btn {
+	color: var(--white) !important;
+	background-color: var(--color-primary);
+	border: none;
+	border-radius: 28px;
+	cursor: pointer;
+	padding: 10px 25px !important;
+	margin-left: 10px;
+	transition: opacity 0.3s ease;
+}
+
+.nav__btn:hover {
+	opacity: 0.7;
+	color: var(--white) !important;
+}
+
+.nav__divider {
+	display: none;
+}
+
+.nav__burger {
+	display: none;
+	cursor: pointer;
+	padding: 10px;
+	background: none;
+	border: none;
+	outline: none;
+}
+
+.burger__icon,
+.burger__icon::before,
+.burger__icon::after {
+	content: '';
+	display: block;
+	width: 25px;
+	height: 3px;
+	background-color: var(--color-gray);
+	position: relative;
+	transition: all 0.3s ease;
+}
+
+.burger__icon::before {
+	top: -8px;
+}
+
+.burger__icon::after {
+	top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.header__wrapper {
+		padding: 25px 0;
+	}
+
+	.nav__burger {
+		display: block;
+	}
+
+	.nav__items {
+		display: none;
+		position: absolute;
+		top: 90px;
+		left: 24px;
+		right: 24px;
+		background-color: var(--color-purple);
+		border-radius: 10px;
+		padding: 40px 24px;
+		flex-direction: column;
+		margin-left: 0;
+		z-index: 1000;
+	}
+
+	.nav__links,
+	.nav__aside {
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.nav__item {
+		color: var(--white);
+		width: 100%;
+		text-align: center;
+		padding: 15px 0;
+	}
+
+	.nav__item:hover {
+		color: var(--color-primary-light);
+	}
+
+	.nav__divider {
+		display: block;
+		width: 100%;
+		border: 0;
+		margin: 15px 0;
+		border-top: 1px solid var(--color-gray);
+	}
+
+	.nav__btn {
+		width: 100%;
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+	#nav__menu__input:checked ~ .nav__items {
+		display: flex;
+	}
+
+	#nav__menu__input:checked ~ .nav__burger .burger__icon {
+		background-color: transparent;
+	}
+	#nav__menu__input:checked ~ .nav__burger .burger__icon::before {
+		transform: rotate(45deg);
+		top: 0;
+	}
+	#nav__menu__input:checked ~ .nav__burger .burger__icon::after {
+		transform: rotate(-45deg);
+		top: -3px;
+	}
+}
