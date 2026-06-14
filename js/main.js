@@ -32,17 +32,12 @@ async function apiRequest(method, path, body = null) {
 /**
  * URL qisqartirish
  */
-export const createShortLink = (url, code) => apiRequest("POST", "/shorten", { original: url, custom: code });
-
-/**
- * URL statistikasini olish
- */
-export const getStats = (shortCode) => apiRequest("GET", `/short/${shortCode}`);
+const createShortLink = (url, code) => apiRequest("POST", "/shorten", { original: url, custom: code });
 
 /**
  * Umumiy sayt statistikasini olish
  */
-export const globalStats = () => apiRequest("GET", "/api/stats");
+const globalStats = () => apiRequest("GET", "/api/stats");
 
 // Example: Get site stats
 globalStats().then((stats) => {
