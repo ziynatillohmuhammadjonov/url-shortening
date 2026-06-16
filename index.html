@@ -1,12 +1,154 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>URL Shortening</title>
-    <link rel="stylesheet" href="./styles/main.css" />
-  </head>
-  <body>
-    <script src="./js/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shortly - URL Shortener</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+    <!-- HEADER SECTION -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h2>Shortly</h2>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#features" class="nav-link">Features</a></li>
+                        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                        <li><a href="#resources" class="nav-link">Resources</a></li>
+                    </ul>
+                </nav>
+                <div class="header-buttons">
+                    <button class="btn-login">Login</button>
+                    <button class="btn-signup">Sign Up</button>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <h1 class="hero-title">More than just shorter links</h1>
+                    <p class="hero-subtitle">Build your brand's recognition and get detailed insights on how your links are performing.</p>
+                    <a href="#" class="btn-cyan btn-round">Get Started</a>
+                </div>
+                <div class="hero-image">
+                    <img src="img/working_with_computer.svg" alt="Illustration Working">
+                </div>
+            </div>
+
+            <div class="shorten-form-box">
+                <div class="input-wrapper">
+                    <input type="text" placeholder="Shorten a link here..." class="shorten-input" id="shortenInput">
+                    <span class="error-text" id="errorText">Please add a link</span>
+                </div>
+                <button class="btn-cyan btn-square" id="shortenBtn">Shorten It!</button>
+            </div>
+
+            <div class="results-container" id="resultsContainer">
+                <!-- Results will be added here dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- STATISTICS SECTION -->
+    <section class="statistics-section" id="features">
+        <div class="container">
+            <div class="statistics-header">
+                <h2 class="statistics-title">Advanced Statistics</h2>
+                <p class="statistics-subtitle">Track how your links are performing across the web with our advanced statistics dashboard.</p>
+            </div>
+
+            <div class="statistics-grid">
+                <div class="stat-card stat-card-1">
+                    <div class="stat-icon">
+                        <img src="img/icon-brand-recognition.svg" alt="Brand Recognition">
+                    </div>
+                    <h3 class="stat-card-title">Brand Recognition</h3>
+                    <p class="stat-card-text">Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content.</p>
+                </div>
+
+                <div class="stat-card stat-card-2">
+                    <div class="stat-icon">
+                        <img src="img/icon-detailed-records.svg" alt="Detailed Records">
+                    </div>
+                    <h3 class="stat-card-title">Detailed Records</h3>
+                    <p class="stat-card-text">Gain insights into who is clicking your links. Know when and where people engage with your content.</p>
+                </div>
+
+                <div class="stat-card stat-card-3">
+                    <div class="stat-icon">
+                        <img src="img/icon-fully-customizable.svg" alt="Fully Customizable">
+                    </div>
+                    <h3 class="stat-card-title">Fully Customizable</h3>
+                    <p class="stat-card-text">Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="cta-title">Boost your links today</h2>
+            <a href="#" class="btn-cyan btn-round">Get Started</a>
+        </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4 class="footer-title">Shortly</h4>
+                </div>
+                <div class="footer-column">
+                    <h5 class="footer-heading">Features</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Link Shortening</a></li>
+                        <li><a href="#">Branded Links</a></li>
+                        <li><a href="#">Analytics</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5 class="footer-heading">Resources</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Developers</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h5 class="footer-heading">Company</h5>
+                    <ul class="footer-list">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Our Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Shortly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>
