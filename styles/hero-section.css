@@ -1,0 +1,74 @@
+.last_section{
+   height: 250px;   
+   background-image: url(../images/Path\ 2.png);
+}
+
+.boost_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.last_title{
+    color: #FFFFFF;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 57px;
+    margin-bottom: 32px;
+}
+    .boost_btn{
+        border: none;
+        color: #FFFFFF;
+        background-color: #2BD0D0;
+        font-size: 20px;
+        line-height: 100%;
+        font-weight: 700;
+        border-radius: 28px;
+        padding: 13px 40px;
+        
+
+    }
+
+/* Footer section */
+.footer{
+    background-color: #232127;
+  
+    height: 310px;
+    padding:70px 165px;
+   
+}
+
+.foot_main{
+      display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-bottom: 71px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+}
+.h3_class{
+    color: white;
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 700;
+    display: flex;
+ 
+    margin-bottom: 22px;
+}
+.links p{
+    color: #BFBFBF;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  
+}
+.icons{
+    display: flex;
+    gap: 24px;
+
+}
